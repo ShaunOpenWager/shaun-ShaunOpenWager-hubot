@@ -62,7 +62,7 @@
 //};
 
 
-module.exports = (robot) {
+module.exports = function(robot) {
   robot.respond /define( me)? (.*)/i, (msg) ->
     word = msg.match[2]
 
