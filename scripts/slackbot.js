@@ -62,7 +62,7 @@
 //};
 
 
-module.exports = (robot) ->
+module.exports = (robot) {
   robot.respond /define( me)? (.*)/i, (msg) ->
     word = msg.match[2]
 
@@ -112,7 +112,7 @@ module.exports = (robot) ->
         message += parsed_definitions.join "\n"
         msg.send message
 
-
+}
 
 
 /************************************
