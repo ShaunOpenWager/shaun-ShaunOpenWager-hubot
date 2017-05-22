@@ -66,11 +66,11 @@ module.exports = function(robot) {
   robot.respond /define( me)? (.*)/i, (msg) ->
     word = msg.match[2]
 
-    if process.env.PEARSON_API_KEY == y4loGKVGPfPp9nb8ytTV3CG6Jwa7bfqX
+    if process.env.PEARSON_API_KEY == undefined
       msg.send "API keys not set up properly. Sorry!"
       return
 
-    query = {apikey: process.env.PEARSON_API_KEY, headword: word}
+    query = {apikey: process.env.y4loGKVGPfPp9nb8ytTV3CG6Jwa7bfqX, headword: word}
     msg.http("https://api.pearson.com:443/v2/dictionaries/laad3/entries")
       .query(query)
       .get() (err, res, body) ->
