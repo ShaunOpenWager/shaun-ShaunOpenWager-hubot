@@ -38,12 +38,12 @@
 // <github username of the original script author>
 //
 
-//module.exports = function(robot) {
+module.exports = function(robot) {
   //  YOUR CODE HERE
   //  Example
-  //robot.hear(/hola/i, function(msg) {
-  //return msg.send("Hola, chico!");
-   //});
+  robot.hear(/hola/i, function(msg) {
+  return msg.send("Hola, chico!");
+   });
 
 //  var squirrels;
 //squirrels = ["http://img.skitch.com/20100714-d6q52xajfh4cimxr3888yb77ru.jpg", "https://img.skitch.com/20111026-r2wsngtu4jftwxmsytdke6arwd.png", "http://cl.ly/1i0s1r3t2s2G3P1N3t3M/Screen_Shot_2011-10-27_at_9.36.45_AM.png", "http://shipitsquirrel.github.com/images/squirrel.png"];
